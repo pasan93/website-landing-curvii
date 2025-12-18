@@ -2,7 +2,7 @@ import type React from "react";
 import Link from "next/link";
 import { cn } from "./cn";
 
-type ButtonVariant = "primary" | "secondary" | "ghost";
+type ButtonVariant = "primary" | "secondary" | "ghost" | "outline";
 type ButtonSize = "sm" | "md" | "lg";
 
 type ButtonBaseProps = {
@@ -17,6 +17,7 @@ const variantClasses: Record<ButtonVariant, string> = {
   secondary:
     "bg-natural-white text-warm-purple border border-warm-grey/70 hover:bg-warm-grey/40 hover:shadow-md",
   ghost: "bg-transparent text-warm-purple hover:bg-warm-grey/35",
+  outline: "bg-transparent text-warm-purple border border-warm-grey/70 hover:bg-warm-grey/35 hover:shadow-md",
 };
 
 const sizeClasses: Record<ButtonSize, string> = {

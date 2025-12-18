@@ -1,10 +1,10 @@
 "use client";
 
 import type React from "react";
-import { motion } from "framer-motion";
+import { motion, HTMLMotionProps } from "framer-motion";
 import { cn } from "./cn";
 
-type AnimatedBadgeProps = React.HTMLAttributes<HTMLSpanElement> & {
+type AnimatedBadgeProps = Omit<HTMLMotionProps<"span">, "color"> & {
   tone?: "pink" | "sage" | "blue" | "grey" | "orange";
   delay?: number;
   pulse?: boolean;
