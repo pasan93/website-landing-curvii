@@ -27,19 +27,10 @@ export function GlowButton({
       transition={{ duration: 0.5, delay }}
       className="relative"
     >
-      {/* Glow effect */}
-      <motion.div
-        className="absolute -inset-1 rounded-full opacity-70 blur-lg"
+      {/* Glow effect - static and subtle */}
+      <div
+        className="absolute -inset-1 rounded-full opacity-40 blur-md"
         style={{ backgroundColor: glowColor }}
-        animate={{
-          scale: [1, 1.1, 1],
-          opacity: [0.5, 0.7, 0.5],
-        }}
-        transition={{
-          duration: 2,
-          repeat: Infinity,
-          ease: "easeInOut",
-        }}
       />
       <Link
         href={href}

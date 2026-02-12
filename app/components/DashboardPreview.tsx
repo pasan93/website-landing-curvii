@@ -1,6 +1,6 @@
+import Image from "next/image";
 import { Container } from "./Container";
 import { FadeIn } from "./ui/FadeIn";
-import { DashboardMock } from "./DashboardMock";
 import { Badge } from "./ui/Badge";
 
 export function DashboardPreview() {
@@ -10,7 +10,7 @@ export function DashboardPreview() {
         <div className="grid gap-10 lg:grid-cols-2 lg:items-center">
           <FadeIn>
             <h2 className="text-3xl font-bold leading-heading tracking-tight">
-              A dashboard built for real-life business
+              A dashboard built for real life business
             </h2>
             <p className="mt-4 text-lg leading-body tracking-tight text-warm-purple/80">
               Check the essentials fast. Then go deeper with AI summaries and
@@ -25,14 +25,16 @@ export function DashboardPreview() {
           </FadeIn>
 
           <FadeIn delay={0.1} className="lg:pl-6">
-            <div className="overflow-x-auto rounded-2xl bg-natural-white/60 p-4">
-              <div className="min-w-[560px]">
-                <DashboardMock />
-              </div>
+            <div className="overflow-hidden rounded-2xl bg-natural-white shadow-xl">
+              <Image
+                src="/images/dashboard-preview.png"
+                alt="Curvii Dashboard Preview"
+                width={800}
+                height={500}
+                className="w-full h-auto"
+                priority
+              />
             </div>
-            <p className="mt-3 text-sm text-warm-purple/70">
-              Mobile? No worries — scroll to explore.
-            </p>
           </FadeIn>
         </div>
       </Container>

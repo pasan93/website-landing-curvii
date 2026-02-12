@@ -28,28 +28,28 @@ const features = [
       </div>
     ),
     description:
-      "Connect in seconds, not hours. One-click sync with your Xero account.",
+      "Connect in seconds with one-click sync to your Xero account.",
     icon: Link2,
     color: "bg-highlighter-orange",
   },
   {
     title: "Crystal-clear dashboard",
     description:
-      "Everything you need, nothing you don't — revenue, expenses, cash flow, invoices.",
+      "See revenue, expenses, cash flow, and invoices — without the clutter. Including who owes you money, who you pay, and what needs attention.",
     icon: LayoutDashboard,
     color: "bg-lavender-blue",
   },
   {
     title: "AI summaries",
     description:
-      "Your weekly business brief, sorted. Plain-English insights without the noise.",
+      "Plain-English insights that highlight what needs attention.",
     icon: Sparkles,
     color: "bg-highlighter-pink",
   },
   {
     title: "Ask anything",
     description:
-      "Just ask, like you would a mate. Curvii answers natural questions about your data.",
+      "Ask natural questions about your data, like you would a mate.",
     icon: MessageCircle,
     color: "bg-natural-sage",
   },
@@ -67,8 +67,7 @@ export function Features() {
             Know what's happening, <span className="text-highlighter-pink">at a glance</span>
           </h2>
           <p className="mt-4 text-lg leading-body tracking-tight text-warm-purple/80">
-            Curvii turns Xero data into a dashboard you actually want to check —
-            plus AI insights that cut straight to the point.
+            Curvii turns Xero data into a dashboard you'll actually check — with AI insights that cut straight to the point.
           </p>
         </FadeIn>
 

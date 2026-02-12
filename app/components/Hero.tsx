@@ -67,23 +67,18 @@ export function Hero() {
             </AnimatedBadge>
           </motion.div>
 
-          {/* Animated headline */}
+          {/* Animated headline - Two lines */}
           <div className="mt-8">
-            <AnimatedText
-              text="Your Xero data, finally making sense."
-              className="text-4xl font-bold leading-heading tracking-tight text-warm-purple sm:text-5xl lg:text-6xl"
-              highlightWords={["finally"]}
-              highlightClassName="animate-gradient"
-              wordReplacements={{
-                "Xero": <XeroLogo />,
-              }}
-            />
+            <div className="text-4xl font-bold leading-heading tracking-tight text-warm-purple sm:text-5xl lg:text-6xl">
+              <div className="block">Your <XeroLogo /> data,</div>
+              <div className="block">finally making sense.</div>
+            </div>
           </div>
 
           {/* Animated paragraph */}
           <div className="mt-6">
             <AnimatedParagraph
-              text="Curvii connects to Xero and turns your numbers into clear insights. Ask questions, get weekly summaries, and stay on top of cash flow — no spreadsheets required."
+              text="See profit, cash, and what needs attention — in under 60 seconds."
               className="mx-auto max-w-2xl text-lg leading-relaxed tracking-tight text-warm-purple/80"
               delay={0.8}
             />
