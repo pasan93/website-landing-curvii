@@ -40,7 +40,7 @@ export function HowItWorks() {
             How it <span className="text-lavender-blue">works</span>
           </h2>
           <p className="mt-4 text-lg leading-body tracking-tight text-warm-purple/80">
-            Set up is quick — you'll be up and running in a few minutes.
+            Revenue, expenses, cash flow, invoices — all pulled into one clean view.
           </p>
         </FadeIn>
 
